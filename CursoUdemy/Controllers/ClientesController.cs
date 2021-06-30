@@ -31,13 +31,11 @@ namespace CursoUdemy.Controllers
 
 
         private EmpDBContext db = new EmpDBContext();
-
         [OutputCache (CacheProfile = "Cache5Minutos")]
-        // GET: Clientes
+        // GET: Clientesssssssss
         public ActionResult Index()
         {
-    
-                var Clientes = from e in db.Clientes//empList
+                var Clientes = from e in db.Clientes//empListtttttttt
                            orderby e.id
                            select e;
             return View(Clientes);
